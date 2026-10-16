@@ -43,6 +43,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 75px;
   font-size: 16px;
   -webkit-text-size-adjust: 100%;
 }
@@ -53,7 +54,7 @@ body {
   color: var(--text-primary);
   line-height: 1.65;
   min-height: 100vh;
-  padding: 40px 20px 80px;
+  padding: 0 0 80px;
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
@@ -66,43 +67,92 @@ body {
   width: 100%;
   max-width: var(--container-max);
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 /* --------------------------------------------------------------------------
-   3. Header & Navigation (Academic Reference Style)
+   3. Floating Sticky Header & Navigation (Academic Reference Style)
    -------------------------------------------------------------------------- */
-.site-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 24px;
-  padding-bottom: 28px;
-  margin-bottom: 36px;
+.site-header-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--bg-primary);
   border-bottom: 1px solid var(--border-light);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  width: 100%;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
-.header-left {
-  flex: 1;
-  min-width: 280px;
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 12px 20px;
+  max-width: var(--container-max);
+  margin: 0 auto;
+}
+
+.header-brand-link {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
 }
 
 .person-name {
-  font-size: clamp(2rem, 3.5vw, 2.6rem);
+  font-size: clamp(1.4rem, 2.5vw, 1.85rem);
   font-weight: 800;
   color: var(--color-primary-blue);
   line-height: 1.15;
   letter-spacing: -0.02em;
-  margin-bottom: 8px;
+  margin-bottom: 0;
+  transition: color 0.15s ease;
 }
 
+.person-name:hover {
+  color: var(--color-blue-hover);
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  color: var(--color-primary-blue);
+  text-decoration: none;
+  font-size: 0.92rem;
+  font-weight: 600;
+  transition: color 0.15s ease;
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  color: var(--color-blue-hover);
+  text-decoration: underline;
+}
+
+.nav-link.active {
+  color: var(--color-orange-active);
+  font-weight: 700;
+}
+
+/* Header Sublinks (Placed in main container below floating navbar) */
 .header-sublinks {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 14px;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   color: var(--text-secondary);
+  padding: 18px 0;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--border-divider);
 }
 
 .header-sublinks a {

@@ -41,6 +41,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 9. Setup Case Study Modal
   setupProjectModal(data.projects);
+
+  // 10. Setup ScrollSpy for Floating Sticky Navbar
+  setupScrollspy();
 });
 
 /* --------------------------------------------------------------------------
@@ -378,4 +381,37 @@ function setupProjectModal(projects) {
       closeModal();
     }
   });
+}
+
+/**
+ * ScrollSpy: Automatically highlights active nav link as user scrolls
+ */
+function setupScrollspy() {
+  const navLinks = document.querySelectorAll(".header-nav .nav-link");
+  const sectionIds = ["contact", "terminal", "skills", "experience", "awards", "projects", "education", "home"];
+
+  function onScroll() {
+    const scrollPos = window.scrollY + 130;
+    let activeId = "home";
+
+    for (const id of sectionIds) {
+      const el = document.getElementById(id);
+      if (el && scrollPos >= el.offsetTop) {
+        activeId = id;
+        break;
+      }
+    }
+
+    navLinks.forEach((link) => {
+      const href = link.getAttribute("href");
+      if (href === `#${activeId}`) {
+        link.classList.add("active");
+      } else {
+        link.classList.remove("active");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
 }

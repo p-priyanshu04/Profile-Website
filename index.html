@@ -26,24 +26,14 @@
 </head>
 <body>
 
-  <div class="container">
-    <!-- ======================================================================
-         SITE HEADER & NAVIGATION (Academic Reference Style)
-         ====================================================================== -->
-    <header class="site-header" id="home">
-      <div class="header-left">
+  <!-- ======================================================================
+       FLOATING STICKY HEADER & NAVIGATION (Always floats on top)
+       ====================================================================== -->
+  <header class="site-header-sticky" id="home">
+    <div class="header-inner">
+      <a href="#home" class="header-brand-link">
         <h1 class="person-name" id="person-name">Priyanshu Paliwal</h1>
-        <div class="header-sublinks">
-          <a href="mailto:priyanshu.paliwal@kgpian.iitkgp.ac.in" id="header-email-link">
-            <span id="header-email">priyanshu.paliwal [at] kgpian.iitkgp.ac.in</span>
-          </a>
-          <a href="https://codeforces.com/profile/CapLevi04" target="_blank" rel="noopener" id="header-cf-link">Codeforces: CapLevi04 (Expert)</a>
-          <a href="https://www.codechef.com/users/cap_levi04" target="_blank" rel="noopener" id="header-cc-link">CodeChef: cap_levi04 (3★)</a>
-          <a href="https://atcoder.jp/users/CapLevi04" target="_blank" rel="noopener" id="header-atcoder-link">AtCoder: CapLevi04 (4 Kyu)</a>
-          <a href="https://github.com" target="_blank" rel="noopener" id="header-github-link">GitHub</a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener" id="header-linkedin-link">LinkedIn</a>
-        </div>
-      </div>
+      </a>
 
       <nav class="header-nav">
         <a href="#home" class="nav-link active">Home</a>
@@ -55,7 +45,21 @@
         <a href="#terminal" class="nav-link">Terminal</a>
         <a href="#contact" class="nav-link">Contact</a>
       </nav>
-    </header>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- Header Sublinks Row (Contact & CP Profiles) -->
+    <div class="header-sublinks">
+      <a href="mailto:priyanshu.paliwal@kgpian.iitkgp.ac.in" id="header-email-link">
+        <span id="header-email">priyanshu.paliwal [at] kgpian.iitkgp.ac.in</span>
+      </a>
+      <a href="https://codeforces.com/profile/CapLevi04" target="_blank" rel="noopener" id="header-cf-link">Codeforces: CapLevi04 (Expert)</a>
+      <a href="https://www.codechef.com/users/cap_levi04" target="_blank" rel="noopener" id="header-cc-link">CodeChef: cap_levi04 (3★)</a>
+      <a href="https://atcoder.jp/users/CapLevi04" target="_blank" rel="noopener" id="header-atcoder-link">AtCoder: CapLevi04 (4 Kyu)</a>
+      <a href="https://github.com" target="_blank" rel="noopener" id="header-github-link">GitHub</a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener" id="header-linkedin-link">LinkedIn</a>
+    </div>
 
     <!-- ======================================================================
          TWO-COLUMN HERO / BIO SECTION (Photo on Right)
