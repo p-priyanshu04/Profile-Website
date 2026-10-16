@@ -45,6 +45,24 @@ const profileData = {
       { label: "JEE Advanced 2024", value: "AIR 821" },
       { label: "Codeforces Rating", value: "1600 (Expert)" },
       { label: "CodeChef Rating", value: "1752 (3★)" }
+    ],
+    news: [
+      {
+        date: "[Oct 2026]",
+        text: "Qualified for the Finals of the Integral Cup 2026 (Top 40 out of 2,000+ candidates)."
+      },
+      {
+        date: "[Aug 2026]",
+        text: "Achieved Global Rank 207 and 26th in India in IMC Prosperity 4 algorithmic trading challenge (18,000+ teams)."
+      },
+      {
+        date: "[Jun 2026]",
+        text: "Developed high-performance Multi-Algorithm Code Diff Engine in modern C++ with GumTree AST analysis."
+      },
+      {
+        date: "[May 2026]",
+        text: "Achieved Codeforces Expert (Peak: 1600) and CodeChef 3 Star (Peak: 1752) competitive programming ratings."
+      }
     ]
   },
 

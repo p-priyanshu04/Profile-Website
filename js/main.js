@@ -100,6 +100,17 @@ function renderHero(personal) {
   if (bioContainer && personal.bio) {
     bioContainer.innerHTML = personal.bio.map(p => `<p class="bio-paragraph">${p}</p>`).join("");
   }
+
+  // News & Updates Feed
+  const newsList = document.getElementById("hero-news-list");
+  if (newsList && personal.news && personal.news.length > 0) {
+    newsList.innerHTML = personal.news.map(item => `
+      <li class="news-item">
+        <span class="news-date">${item.date}</span>
+        <span class="news-text">${item.text}</span>
+      </li>
+    `).join("");
+  }
 }
 
 /* --------------------------------------------------------------------------
