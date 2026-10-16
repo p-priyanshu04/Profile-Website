@@ -16,7 +16,7 @@ const profileData = {
     status: "B.Tech.(Hons.) in AI @ IIT Kharagpur (CGPA: 9.40) • Open for Research & Summer Internships",
     location: "IIT Kharagpur, West Bengal, India",
     email: "priyanshu.paliwal@kgpian.iitkgp.ac.in",
-    github: "https://github.com",
+    github: "https://github.com/p-priyanshu04",
     linkedin: "https://linkedin.com",
     codeforces: "https://codeforces.com/profile/CapLevi04",
     codechef: "https://www.codechef.com/users/cap_levi04",

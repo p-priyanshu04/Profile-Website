@@ -150,47 +150,92 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 14px;
+  gap: 16px;
   font-size: 0.92rem;
   color: var(--text-secondary);
-  padding: 18px 0;
+  padding: 14px 0 20px 0;
   margin-bottom: 24px;
   border-bottom: 1px solid var(--border-divider);
 }
 
-.header-sublinks a {
-  color: var(--color-primary-blue);
-  text-decoration: none;
-  transition: color 0.15s ease;
-}
-
-.header-sublinks a:hover {
-  text-decoration: underline;
-  color: var(--color-blue-hover);
-}
-
-.header-email {
+.header-email-item {
   color: var(--text-secondary);
   font-family: var(--font-mono);
   font-size: 0.88rem;
-}
-
-.social-icons-group {
+  text-decoration: none;
+  transition: color 0.15s ease;
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  margin-left: 4px;
 }
 
-.social-icon-link {
+.header-email-item:hover {
   color: var(--color-primary-blue);
+  text-decoration: underline;
+}
+
+.header-social-logos {
   display: inline-flex;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.site-logo-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  padding: 4px 10px;
+  background: var(--logo-badge-bg, #ffffff);
+  border: 1px solid var(--border-divider);
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  text-decoration: none;
+  transition: transform 0.18s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.18s ease, border-color 0.18s ease;
+  box-sizing: border-box;
+}
+
+.site-logo-link:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-primary-blue);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.09);
   text-decoration: none;
 }
 
-.social-icon-link:hover {
-  color: var(--color-blue-hover);
+.site-logo-img {
+  display: block;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+.logo-codeforces {
+  height: 18px;
+  max-height: 18px;
+  width: auto;
+}
+
+.logo-codechef {
+  height: 22px;
+  max-height: 22px;
+  width: auto;
+}
+
+.logo-atcoder {
+  height: 25px;
+  max-height: 25px;
+  width: auto;
+}
+
+.logo-github {
+  height: 19px;
+  max-height: 19px;
+  width: auto;
+}
+
+.logo-linkedin {
+  height: 17px;
+  max-height: 17px;
+  width: auto;
 }
 
 /* Navigation Links */

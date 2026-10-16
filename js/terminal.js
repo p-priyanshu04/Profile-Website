@@ -434,7 +434,8 @@ class EngineeringTerminal {
         "--terminal-header-bg",
         "--terminal-text",
         "--term-prompt",
-        "--btn-text-color"
+        "--btn-text-color",
+        "--logo-badge-bg"
       ];
       cssProps.forEach((prop) => root.style.removeProperty(prop));
       if (save) {
@@ -523,6 +524,7 @@ class EngineeringTerminal {
     root.style.setProperty("--terminal-text", fg.hex);
     root.style.setProperty("--term-prompt", fg.hex);
     root.style.setProperty("--btn-text-color", btnTextColor);
+    root.style.setProperty("--logo-badge-bg", bg.isDark ? "#ffffff" : "#ffffff");
 
     if (save) {
       try {

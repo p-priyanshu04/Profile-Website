@@ -62,27 +62,33 @@ function renderHero(personal) {
   if (emailLink) emailLink.href = `mailto:${personal.email}`;
 
   const githubLink = document.getElementById("header-github-link");
-  if (githubLink) githubLink.href = personal.github;
+  if (githubLink) {
+    githubLink.href = personal.github || "https://github.com/p-priyanshu04";
+    githubLink.title = "GitHub: p-priyanshu04";
+  }
 
   const linkedinLink = document.getElementById("header-linkedin-link");
-  if (linkedinLink) linkedinLink.href = personal.linkedin;
+  if (linkedinLink) {
+    linkedinLink.href = personal.linkedin;
+    linkedinLink.title = "LinkedIn: Priyanshu Paliwal";
+  }
 
   const cfLink = document.getElementById("header-cf-link");
   if (cfLink) {
     cfLink.href = personal.codeforces;
-    cfLink.textContent = `Codeforces: CapLevi04`;
+    cfLink.title = `Codeforces: ${personal.handles && personal.handles.codeforces ? personal.handles.codeforces : 'CapLevi04 (Expert)'}`;
   }
 
   const ccLink = document.getElementById("header-cc-link");
   if (ccLink) {
     ccLink.href = personal.codechef;
-    ccLink.textContent = `CodeChef: cap_levi04`;
+    ccLink.title = `CodeChef: ${personal.handles && personal.handles.codechef ? personal.handles.codechef : 'cap_levi04 (3★)'}`;
   }
 
   const atcoderLink = document.getElementById("header-atcoder-link");
   if (atcoderLink) {
     atcoderLink.href = personal.atcoder;
-    atcoderLink.textContent = `AtCoder: CapLevi04`;
+    atcoderLink.title = `AtCoder: ${personal.handles && personal.handles.atcoder ? personal.handles.atcoder : 'CapLevi04 (4 Kyu)'}`;
   }
 
   // Status Line

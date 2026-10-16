@@ -90,6 +90,86 @@
       color: var(--color-orange-active) !important;
       font-weight: 700 !important;
     }
+
+    /* Header Sublinks & Social Logo Badges */
+    .header-sublinks {
+      display: flex !important;
+      align-items: center !important;
+      flex-wrap: wrap !important;
+      gap: 16px !important;
+      padding: 14px 0 20px 0 !important;
+      margin-bottom: 24px !important;
+      border-bottom: 1px solid var(--border-divider) !important;
+    }
+    .header-email-item {
+      color: var(--text-secondary);
+      font-family: var(--font-mono);
+      font-size: 0.88rem;
+      text-decoration: none;
+      transition: color 0.15s ease;
+      display: inline-flex;
+      align-items: center;
+    }
+    .header-email-item:hover {
+      color: var(--color-primary-blue);
+      text-decoration: underline;
+    }
+    .header-social-logos {
+      display: inline-flex !important;
+      align-items: center !important;
+      flex-wrap: wrap !important;
+      gap: 10px !important;
+    }
+    .site-logo-link {
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      height: 32px !important;
+      padding: 4px 10px !important;
+      background: var(--logo-badge-bg, #ffffff) !important;
+      border: 1px solid var(--border-divider) !important;
+      border-radius: 6px !important;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
+      text-decoration: none !important;
+      transition: transform 0.18s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.18s ease, border-color 0.18s ease !important;
+      box-sizing: border-box !important;
+    }
+    .site-logo-link:hover {
+      transform: translateY(-2px) !important;
+      border-color: var(--color-primary-blue) !important;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.09) !important;
+      text-decoration: none !important;
+    }
+    .site-logo-img {
+      display: block !important;
+      object-fit: contain !important;
+      vertical-align: middle !important;
+    }
+    .logo-codeforces {
+      height: 18px !important;
+      max-height: 18px !important;
+      width: auto !important;
+    }
+    .logo-codechef {
+      height: 22px !important;
+      max-height: 22px !important;
+      width: auto !important;
+    }
+    .logo-atcoder {
+      height: 25px !important;
+      max-height: 25px !important;
+      width: auto !important;
+    }
+    .logo-github {
+      height: 19px !important;
+      max-height: 19px !important;
+      width: auto !important;
+    }
+    .logo-linkedin {
+      height: 17px !important;
+      max-height: 17px !important;
+      width: auto !important;
+    }
   </style>
 </head>
 <body>
@@ -116,16 +196,28 @@
   </header>
 
   <div class="container" id="home">
-    <!-- Header Sublinks Row (Contact & CP Profiles) -->
+    <!-- Header Sublinks Row (Contact & Attached Platform Logos) -->
     <div class="header-sublinks">
-      <a href="mailto:priyanshu.paliwal@kgpian.iitkgp.ac.in" id="header-email-link">
+      <a href="mailto:priyanshu.paliwal@kgpian.iitkgp.ac.in" id="header-email-link" class="header-email-item">
         <span id="header-email">priyanshu.paliwal [at] kgpian.iitkgp.ac.in</span>
       </a>
-      <a href="https://codeforces.com/profile/CapLevi04" target="_blank" rel="noopener" id="header-cf-link">Codeforces: CapLevi04 (Expert)</a>
-      <a href="https://www.codechef.com/users/cap_levi04" target="_blank" rel="noopener" id="header-cc-link">CodeChef: cap_levi04 (3★)</a>
-      <a href="https://atcoder.jp/users/CapLevi04" target="_blank" rel="noopener" id="header-atcoder-link">AtCoder: CapLevi04 (4 Kyu)</a>
-      <a href="https://github.com" target="_blank" rel="noopener" id="header-github-link">GitHub</a>
-      <a href="https://linkedin.com" target="_blank" rel="noopener" id="header-linkedin-link">LinkedIn</a>
+      <div class="header-social-logos">
+        <a href="https://codeforces.com/profile/CapLevi04" target="_blank" rel="noopener" id="header-cf-link" class="site-logo-link" title="Codeforces: CapLevi04 (Expert)" aria-label="Codeforces">
+          <img src="assets/images/logos/codeforces.png" alt="Codeforces" class="site-logo-img logo-codeforces">
+        </a>
+        <a href="https://www.codechef.com/users/cap_levi04" target="_blank" rel="noopener" id="header-cc-link" class="site-logo-link" title="CodeChef: cap_levi04 (3★)" aria-label="CodeChef">
+          <img src="assets/images/logos/codechef.png" alt="CodeChef" class="site-logo-img logo-codechef">
+        </a>
+        <a href="https://atcoder.jp/users/CapLevi04" target="_blank" rel="noopener" id="header-atcoder-link" class="site-logo-link" title="AtCoder: CapLevi04 (4 Kyu)" aria-label="AtCoder">
+          <img src="assets/images/logos/atcoder.png" alt="AtCoder" class="site-logo-img logo-atcoder">
+        </a>
+        <a href="https://github.com/p-priyanshu04" target="_blank" rel="noopener" id="header-github-link" class="site-logo-link" title="GitHub: p-priyanshu04" aria-label="GitHub">
+          <img src="assets/images/logos/github.png" alt="GitHub" class="site-logo-img logo-github">
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" id="header-linkedin-link" class="site-logo-link" title="LinkedIn: Priyanshu Paliwal" aria-label="LinkedIn">
+          <img src="assets/images/logos/linkedin.png" alt="LinkedIn" class="site-logo-img logo-linkedin">
+        </a>
+      </div>
     </div>
 
     <!-- ======================================================================
