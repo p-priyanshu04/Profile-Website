@@ -1,0 +1,160 @@
+/* ==========================================================================
+   ACADEMIC MINIMALIST CLI TERMINAL STYLESHEET
+   Clean light styling matching the academic white & blue theme.
+   ========================================================================== */
+
+.terminal-section {
+  margin-top: 40px;
+  padding-top: 20px;
+}
+
+.terminal-toggle-btn {
+  background: none;
+  border: 1px solid var(--border-light);
+  color: var(--color-primary-blue);
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  padding: 6px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.terminal-toggle-btn:hover {
+  background: var(--bg-subtle);
+}
+
+.terminal-window {
+  background: var(--terminal-bg, #f8fafc);
+  border: 1px solid var(--border-light);
+  border-radius: 6px;
+  font-family: var(--font-mono);
+  margin-top: 0;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+  transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.terminal-header {
+  background: var(--terminal-header-bg, #f1f5f9);
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-light);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.terminal-controls {
+  display: flex;
+  gap: 6px;
+}
+
+.t-btn {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.t-btn-close { background: #cbd5e1; }
+.t-btn-min { background: #cbd5e1; }
+.t-btn-max { background: #cbd5e1; }
+
+.terminal-body {
+  padding: 14px 18px;
+  min-height: 200px;
+  max-height: 320px;
+  overflow-y: auto;
+  font-size: 0.83rem;
+  line-height: 1.55;
+  color: var(--terminal-text, #1e293b);
+  transition: color 0.25s ease;
+}
+
+.term-line {
+  margin-bottom: 6px;
+}
+
+.term-cmd-echo {
+  color: var(--color-primary-blue);
+  font-weight: 600;
+}
+
+.term-prompt-label {
+  color: var(--term-prompt, #059669);
+  font-weight: 600;
+  margin-right: 6px;
+}
+
+.term-cyan { color: var(--color-primary-blue); }
+.term-green { color: #059669; }
+.term-yellow { color: #d97706; }
+.term-purple { color: #7c3aed; }
+.term-red { color: #dc2626; }
+.term-dim { color: var(--text-muted); }
+
+.term-table {
+  display: table;
+  width: 100%;
+  margin: 6px 0;
+}
+
+.term-table-row {
+  display: table-row;
+}
+
+.term-table-cell {
+  display: table-cell;
+  padding: 2px 10px 2px 0;
+}
+
+.terminal-input-row {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px 14px;
+  border-top: 1px solid var(--border-divider);
+}
+
+.terminal-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  flex-grow: 1;
+}
+
+.terminal-quick-actions {
+  background: var(--terminal-header-bg, #f1f5f9);
+  padding: 8px 16px;
+  border-top: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-size: 0.78rem;
+  transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.quick-cmd-btn {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-light);
+  color: var(--color-primary-blue);
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  padding: 2px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.quick-cmd-btn:hover {
+  background: var(--bg-highlight);
+}

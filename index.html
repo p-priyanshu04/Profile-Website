@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>Priyanshu Paliwal | B.Tech.(Hons.) in Artificial Intelligence, IIT Kharagpur</title>
+  <meta name="description" content="Personal academic and engineering portfolio of Priyanshu Paliwal (24AI10043), B.Tech.(Hons.) in Artificial Intelligence at IIT Kharagpur. Focus on Systems Programming, Database Query Engines, Deep Learning, and Competitive Programming.">
+  <meta name="author" content="Priyanshu Paliwal">
+
+  <!-- OpenGraph Metadata -->
+  <meta property="og:title" content="Priyanshu Paliwal | IIT Kharagpur">
+  <meta property="og:description" content="B.Tech.(Hons.) in Artificial Intelligence at IIT Kharagpur. Systems programming, query optimization, deep learning, and competitive programming.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets with Cache Busting -->
+  <link rel="stylesheet" href="css/styles.css?v=5.0">
+  <link rel="stylesheet" href="css/terminal.css?v=5.0">
+</head>
+<body>
+
+  <div class="container">
+    <!-- ======================================================================
+         SITE HEADER & NAVIGATION (Academic Reference Style)
+         ====================================================================== -->
+    <header class="site-header" id="home">
+      <div class="header-left">
+        <h1 class="person-name" id="person-name">Priyanshu Paliwal</h1>
+        <div class="header-sublinks">
+          <a href="mailto:priyanshu.paliwal@kgpian.iitkgp.ac.in" id="header-email-link">
+            <span id="header-email">priyanshu.paliwal [at] kgpian.iitkgp.ac.in</span>
+          </a>
+          <a href="https://codeforces.com/profile/CapLevi04" target="_blank" rel="noopener" id="header-cf-link">Codeforces: CapLevi04 (Expert)</a>
+          <a href="https://www.codechef.com/users/cap_levi04" target="_blank" rel="noopener" id="header-cc-link">CodeChef: cap_levi04 (3★)</a>
+          <a href="https://atcoder.jp/users/CapLevi04" target="_blank" rel="noopener" id="header-atcoder-link">AtCoder: CapLevi04 (4 Kyu)</a>
+          <a href="https://github.com" target="_blank" rel="noopener" id="header-github-link">GitHub</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener" id="header-linkedin-link">LinkedIn</a>
+        </div>
+      </div>
+
+      <nav class="header-nav">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#awards" class="nav-link">Awards & CP</a>
+        <a href="#experience" class="nav-link">Positions</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#terminal" class="nav-link">Terminal</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </header>
+
+    <!-- ======================================================================
+         TWO-COLUMN HERO / BIO SECTION (Photo on Right)
+         ====================================================================== -->
+    <section class="hero-two-column">
+      <div class="hero-left-content">
+        <!-- Status Line -->
+        <div class="hero-status-line" id="hero-status-line">
+          B.Tech.(Hons.) in Artificial Intelligence @ IIT Kharagpur (CGPA: 9.40) • Open for Research & Summer Internships
+        </div>
+
+        <!-- Featured Specialization -->
+        <div class="hero-paper-highlight">
+          <div class="paper-label">Core Engineering Focus</div>
+          <div class="paper-title" id="hero-featured-title">
+            Systems Programming & Engines • Database Query Optimization • Deep Learning • Competitive Programming
+          </div>
+          <a href="#projects" class="abstract-pill">Explore Projects</a>
+        </div>
+
+        <!-- Short Biography -->
+        <div>
+          <div class="section-subtitle-blue">Short biography</div>
+          <div id="hero-bio-container">
+            <p class="bio-paragraph">
+              I am an undergraduate student pursuing a B.Tech.(Hons.) in Artificial Intelligence at the Indian Institute of Technology (IIT) Kharagpur, currently maintaining a cumulative CGPA of 9.40 / 10.00.
+            </p>
+            <p class="bio-paragraph">
+              My engineering focus bridges low-level systems programming and applied machine learning. On the systems front, I build high-performance engines in modern C++—including a multi-algorithm code diff engine (Myers, GumTree AST, and Histogram diffs), an in-memory SQL query optimizer with catalog-aware predicate pushdown and System-R dynamic programming, and a heuristic Othello game engine with Alpha-Beta pruning, MCTS, and Zobrist transposition caching.
+            </p>
+            <p class="bio-paragraph">
+              In deep learning, I have developed positional attention models for question answering (WikiQA / TREC-QA), dense skip-connection U-Net++ architectures for image segmentation, super-resolution CNNs (SRCNN & VDSR), and two-stage object detection pipelines (YOLO & Faster R-CNN) from scratch.
+            </p>
+            <p class="bio-paragraph">
+              I am an active competitive programmer—Expert on Codeforces (Peak: 1600), 3 Star on CodeChef (Peak: 1752), 4 Kyu on AtCoder (Peak: 1292), and an All India Rank 821 achiever in JEE Advanced 2024 among 160,000 candidates.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Interactive Terminal Shell (in place of image) -->
+      <div class="hero-right-terminal" id="terminal">
+        <div class="terminal-window">
+          <div class="terminal-header">
+            <div class="terminal-controls">
+              <span class="t-btn t-btn-close"></span>
+              <span class="t-btn t-btn-min"></span>
+              <span class="t-btn t-btn-max"></span>
+            </div>
+            <div>priyanshu@kgpian:~ (zsh)</div>
+            <div>IIT KGP / AI</div>
+          </div>
+
+          <div class="terminal-body" id="terminal-body">
+            <!-- Populated via terminal.js -->
+          </div>
+
+          <div class="terminal-input-row">
+            <span class="term-prompt-label">guest@kgpian:~$</span>
+            <input type="text" id="terminal-input" class="terminal-input" placeholder="Type 'help'..." autocomplete="off" spellcheck="false">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         EDUCATION & ACADEMIC BACKGROUND
+         ====================================================================== -->
+    <section class="content-section" id="education">
+      <h2 class="section-heading-blue">Education & Academic Background</h2>
+
+      <div class="edu-degree-block">
+        <div class="edu-degree-title" id="edu-degree-title">B.Tech.(Hons.) in Artificial Intelligence</div>
+        <div class="edu-institution" id="edu-institution">Indian Institute of Technology (IIT) Kharagpur • 2024 - 2028 (Roll: 24AI10043)</div>
+        <div class="edu-gpa-line" id="edu-gpa-line">Cumulative CGPA: 9.40 / 10.00</div>
+      </div>
+
+      <div style="font-weight:700; color:var(--text-primary); margin-bottom: 8px; font-size: 0.95rem;">
+        Prior Schooling:
+      </div>
+      <ul class="academic-list" id="edu-schooling-list" style="margin-bottom: 20px;">
+        <li class="academic-list-item">
+          <span class="item-title-bold">Class XII (CBSE)</span>: 
+          <span>G S Jangid Memorial School, Jodhpur</span> — 
+          <span style="color:var(--color-primary-blue); font-weight:700; font-family:var(--font-mono);">95.4%</span> 
+          <span class="item-muted">(2024)</span>
+        </li>
+        <li class="academic-list-item">
+          <span class="item-title-bold">Class X (CBSE)</span>: 
+          <span>Delhi Public School, Jodhpur</span> — 
+          <span style="color:var(--color-primary-blue); font-weight:700; font-family:var(--font-mono);">98.4%</span> 
+          <span class="item-muted">(2022)</span>
+        </li>
+      </ul>
+
+      <div style="font-weight:700; color:var(--text-primary); margin-top: 18px; margin-bottom: 6px; font-size: 0.95rem;">
+        Theoretical Coursework:
+      </div>
+      <div class="coursework-grid" id="coursework-theory-container" style="margin-bottom: 16px;">
+        <span class="clean-course-tag"><span class="code">CS</span><span>Programming and Data Structures</span></span>
+        <span class="clean-course-tag"><span class="code">CS</span><span>Design and Analysis of Algorithms</span></span>
+        <span class="clean-course-tag"><span class="code">AI</span><span>Introduction to Artificial Intelligence</span></span>
+        <span class="clean-course-tag"><span class="code">AI</span><span>Introduction to Machine Learning</span></span>
+        <span class="clean-course-tag"><span class="code">MATH</span><span>Linear Algebra for AI</span></span>
+        <span class="clean-course-tag"><span class="code">MATH</span><span>Probability and Statistics</span></span>
+        <span class="clean-course-tag"><span class="code">AI</span><span>Deep Learning Foundations</span></span>
+        <span class="clean-course-tag"><span class="code">CS</span><span>Database Management Systems</span></span>
+        <span class="clean-course-tag"><span class="code">AI</span><span>Optimization for Machine Learning</span></span>
+        <span class="clean-course-tag"><span class="code">AI</span><span>Introduction to Data Science</span></span>
+        <span class="clean-course-tag"><span class="code">MATH</span><span>Advanced Calculus</span></span>
+        <span class="clean-course-tag"><span class="code">MATH</span><span>Linear Algebra, Numerical and Complex Analysis</span></span>
+      </div>
+
+      <div style="font-weight:700; color:var(--text-primary); margin-top: 14px; margin-bottom: 6px; font-size: 0.95rem;">
+        Laboratory & Practical Coursework:
+      </div>
+      <div class="coursework-grid" id="coursework-lab-container">
+        <span class="clean-course-tag"><span class="code">LAB</span><span>Programming and Data Structures Lab</span></span>
+        <span class="clean-course-tag"><span class="code">LAB</span><span>Algorithm Design with Python Lab</span></span>
+        <span class="clean-course-tag"><span class="code">LAB</span><span>Machine Learning Lab</span></span>
+        <span class="clean-course-tag"><span class="code">LAB</span><span>System Programming Lab</span></span>
+        <span class="clean-course-tag"><span class="code">LAB</span><span>Database Management Systems Lab</span></span>
+        <span class="clean-course-tag"><span class="code">LAB</span><span>Deep Learning for Spatial Data Lab</span></span>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         RESEARCH & FEATURED PROJECTS
+         ====================================================================== -->
+    <section class="content-section" id="projects">
+      <h2 class="section-heading-blue">Featured Engineering & Systems Projects</h2>
+      <div class="projects-container" id="projects-list-container">
+        
+        <!-- Project 1 -->
+        <article class="project-entry">
+          <div>
+            <img src="assets/images/diff_engine.png" alt="Multi-Algorithm Code Diff Engine" class="project-image-clean" loading="lazy" onerror="this.src='assets/images/rover.png'">
+          </div>
+          <div class="project-details">
+            <div>
+              <a href="https://github.com" target="_blank" rel="noopener" class="project-title-link">
+                Multi-Algorithm Code Diff Engine
+              </a>
+              <span class="project-subline"> — Line & Structural Tree Comparisons from Scratch in C++</span>
+              <span class="item-muted" style="margin-left:8px; font-family:var(--font-mono); font-size:0.8rem;">[June 2026]</span>
+            </div>
+            <ul class="cv-bullets" style="margin-top: 6px;">
+              <li>Built a C++ diff engine integrating 3 distinct diff algorithms implemented entirely from scratch for line-based and tree-based comparisons.</li>
+              <li>Programmed Myers' greedy edit-graph path-finding algorithm computing the shortest edit script needed to transform one file to the other.</li>
+              <li>Applied GumTree tree diffing with top-down subtree matching and bottom-up Dice coefficient similarity for structural syntax comparisons.</li>
+              <li>Implemented the Histogram diff algorithm using recursive patience to find the rarest pivot lines, producing cleaner, human-readable file comparisons.</li>
+              <li>Created an interactive HTML/CSS/JS-based interface with a side-by-side diff view, color-coded edits, and performance latency visualization.</li>
+            </ul>
+            <div class="project-tags-inline">
+              <span class="tag-clean">C++</span>
+              <span class="tag-clean">Algorithms</span>
+              <span class="tag-clean">GumTree AST</span>
+              <span class="tag-clean">Myers Diff</span>
+              <span class="tag-clean">JavaScript</span>
+              <span class="tag-clean">Systems</span>
+            </div>
+            <div class="project-action-links">
+              <button class="clean-link-btn btn-open-modal" data-id="code-diff-engine">[Read System Architecture & Deep Dive]</button>
+              <a href="https://github.com" target="_blank" rel="noopener" class="clean-link-btn">[Source Code]</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-entry">
+          <div>
+            <img src="assets/images/sql_optimizer.png" alt="SQL Query Optimizer and Execution Engine" class="project-image-clean" loading="lazy" onerror="this.src='assets/images/energy-iot.png'">
+          </div>
+          <div class="project-details">
+            <div>
+              <a href="https://github.com" target="_blank" rel="noopener" class="project-title-link">
+                SQL Query Optimizer and Execution Engine
+              </a>
+              <span class="project-subline"> — Predicate Pushdown, System-R Bitmask DP & Volcano Engine in C++</span>
+              <span class="item-muted" style="margin-left:8px; font-family:var(--font-mono); font-size:0.8rem;">[May 2026]</span>
+            </div>
+            <ul class="cv-bullets" style="margin-top: 6px;">
+              <li>Developed a SQL query parser in C++ with catalog-aware predicate pushdown, achieving 71.6% cost reduction on equijoin benchmarks.</li>
+              <li>Built a System-R-style bitmask dynamic programming join ordering with histogram-based selectivity estimation, achieving 95.4% cost reduction on star-joins.</li>
+              <li>Developed a Volcano-style in-memory database execution engine featuring efficient hash joins and sequential data scans.</li>
+              <li>Built an interactive SQL dashboard visualizing raw, RBO, and CBO query plans with per-node cost breakdown and step-by-step optimizer trace logs.</li>
+            </ul>
+            <div class="project-tags-inline">
+              <span class="tag-clean">C++</span>
+              <span class="tag-clean">Database Systems</span>
+              <span class="tag-clean">Query Optimization</span>
+              <span class="tag-clean">System-R</span>
+              <span class="tag-clean">Volcano Model</span>
+              <span class="tag-clean">CBO / RBO</span>
+            </div>
+            <div class="project-action-links">
+              <button class="clean-link-btn btn-open-modal" data-id="sql-query-optimizer">[Read System Architecture & Deep Dive]</button>
+              <a href="https://github.com" target="_blank" rel="noopener" class="clean-link-btn">[Source Code]</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-entry">
+          <div>
+            <img src="assets/images/othello_engine.png" alt="High-Performance Othello Game Engine" class="project-image-clean" loading="lazy" onerror="this.src='assets/images/neural-vision.png'">
+          </div>
+          <div class="project-details">
+            <div>
+              <a href="https://github.com" target="_blank" rel="noopener" class="project-title-link">
+                High-Performance Othello Game Engine
+              </a>
+              <span class="project-subline"> — Alpha-Beta Pruning, Move Ordering, MCTS & Zobrist Transposition Tables</span>
+              <span class="item-muted" style="margin-left:8px; font-family:var(--font-mono); font-size:0.8rem;">[March 2026]</span>
+            </div>
+            <ul class="cv-bullets" style="margin-top: 6px;">
+              <li>Developed a high-performance C++ game engine using Alpha-Beta pruning with move ordering and Monte Carlo Tree Search (MCTS) algorithms.</li>
+              <li>Integrated 8 dynamic evaluation heuristics into the game engine, weighing factors like mobility, corner control, stability, and parity for accurate state assessment.</li>
+              <li>Implemented Zobrist hashing with an unordered map-based transposition table for efficient game state caching (400k+ states), lookup and retrieval.</li>
+              <li>Created a responsive HTML/CSS/JS game interface visualizing execution time, search depth, and total nodes explored per move decision.</li>
+            </ul>
+            <div class="project-tags-inline">
+              <span class="tag-clean">C++</span>
+              <span class="tag-clean">Game Theory</span>
+              <span class="tag-clean">Alpha-Beta Pruning</span>
+              <span class="tag-clean">MCTS</span>
+              <span class="tag-clean">Zobrist Hashing</span>
+              <span class="tag-clean">Heuristic Search</span>
+            </div>
+            <div class="project-action-links">
+              <button class="clean-link-btn btn-open-modal" data-id="othello-game-engine">[Read System Architecture & Deep Dive]</button>
+              <a href="https://github.com" target="_blank" rel="noopener" class="clean-link-btn">[Source Code]</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-entry">
+          <div>
+            <img src="assets/images/attention_qa.png" alt="Position Attention for Question Answering" class="project-image-clean" loading="lazy" onerror="this.src='assets/images/drone-telemetry.png'">
+          </div>
+          <div class="project-details">
+            <div>
+              <a href="https://github.com" target="_blank" rel="noopener" class="project-title-link">
+                Position Attention for Question Answering
+              </a>
+              <span class="project-subline"> — Shared BiLSTM Encoder with Positional Attention for Automated Answer Selection</span>
+              <span class="item-muted" style="margin-left:8px; font-family:var(--font-mono); font-size:0.8rem;">[April 2026]</span>
+            </div>
+            <ul class="cv-bullets" style="margin-top: 6px;">
+              <li>Built a shared Bidirectional LSTM encoder combined with positional attention mechanism for automated answer selection.</li>
+              <li>Processed WikiQA and TREC-QA benchmark datasets using pre-trained 100-dimensional GloVe word embedding vectors.</li>
+              <li>Implemented a positional-sensitive scoring function to model relational distances between query and answer tokens.</li>
+              <li>Generated attention heatmaps to visualize contextual focus and achieved nearly 5% MAP improvement over baseline models.</li>
+            </ul>
+            <div class="project-tags-inline">
+              <span class="tag-clean">PyTorch</span>
+              <span class="tag-clean">NLP</span>
+              <span class="tag-clean">BiLSTM</span>
+              <span class="tag-clean">Attention Mechanism</span>
+              <span class="tag-clean">GloVe</span>
+              <span class="tag-clean">Deep Learning</span>
+            </div>
+            <div class="project-action-links">
+              <button class="clean-link-btn btn-open-modal" data-id="position-attention-qa">[Read System Architecture & Deep Dive]</button>
+              <a href="https://github.com" target="_blank" rel="noopener" class="clean-link-btn">[Source Code]</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-entry">
+          <div>
+            <img src="assets/images/neural-vision.png" alt="Image Segmentation & Super-Resolution using CNNs" class="project-image-clean" loading="lazy">
+          </div>
+          <div class="project-details">
+            <div>
+              <a href="https://github.com" target="_blank" rel="noopener" class="project-title-link">
+                Image Segmentation & Super-Resolution using CNNs
+              </a>
+              <span class="project-subline"> — U-Net++ Dense Skip Connections, SRCNN & VDSR Architectures in PyTorch</span>
+              <span class="item-muted" style="margin-left:8px; font-family:var(--font-mono); font-size:0.8rem;">[March 2026]</span>
+            </div>
+            <ul class="cv-bullets" style="margin-top: 6px;">
+              <li>Built PyTorch encoder-decoder CNNs and mini U-Net architectures utilizing skip connections for image segmentation.</li>
+              <li>Applied U-Net++ concepts with refined dense skip connections and achieved a 42% increase in Intersection over Union (IoU).</li>
+              <li>Developed SRCNN models for image super-resolution, comparing kernel sizes for better reconstruction quality.</li>
+              <li>Implemented VDSR-inspired residual learning methods, achieving fast training convergence and a PSNR score of 31.75 dB.</li>
+            </ul>
+            <div class="project-tags-inline">
+              <span class="tag-clean">PyTorch</span>
+              <span class="tag-clean">Computer Vision</span>
+              <span class="tag-clean">U-Net++</span>
+              <span class="tag-clean">SRCNN</span>
+              <span class="tag-clean">VDSR</span>
+              <span class="tag-clean">Deep Learning</span>
+            </div>
+            <div class="project-action-links">
+              <button class="clean-link-btn btn-open-modal" data-id="image-segmentation-superres">[Read System Architecture & Deep Dive]</button>
+              <a href="https://github.com" target="_blank" rel="noopener" class="clean-link-btn">[Source Code]</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 6 -->
+        <article class="project-entry">
+          <div>
+            <img src="assets/images/neural-vision.png" alt="Traffic Helmet Detection using YOLO & Faster R-CNN" class="project-image-clean" loading="lazy">
+          </div>
+          <div class="project-details">
+            <div>
+              <a href="https://github.com" target="_blank" rel="noopener" class="project-title-link">
+                Traffic Helmet Detection using YOLO & Faster R-CNN
+              </a>
+              <span class="project-subline"> — End-to-End Object Localization & Benchmark Comparison on Real-World Traffic</span>
+              <span class="item-muted" style="margin-left:8px; font-family:var(--font-mono); font-size:0.8rem;">[February 2026]</span>
+            </div>
+            <ul class="cv-bullets" style="margin-top: 6px;">
+              <li>Built YOLO and Faster R-CNN from scratch to detect helmets across 3 classes in real-world traffic images.</li>
+              <li>Engineered a complete data pipeline with augmentation strategies, significantly improving model generalization.</li>
+              <li>Integrated RPN, anchor labelling, ROI pooling, and bounding box regression for precise object localization.</li>
+              <li>Compared both architectures using mAP@0.5, precision, recall, FPS, and latency to analyze the speed-accuracy trade-off.</li>
+            </ul>
+            <div class="project-tags-inline">
+              <span class="tag-clean">PyTorch</span>
+              <span class="tag-clean">YOLO</span>
+              <span class="tag-clean">Faster R-CNN</span>
+              <span class="tag-clean">OpenCV</span>
+              <span class="tag-clean">Object Detection</span>
+            </div>
+            <div class="project-action-links">
+              <button class="clean-link-btn btn-open-modal" data-id="helmet-detection-cv">[Read System Architecture & Deep Dive]</button>
+              <a href="https://github.com" target="_blank" rel="noopener" class="clean-link-btn">[Source Code]</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 7 -->
+        <article class="project-entry">
+          <div>
+            <img src="assets/images/rover.png" alt="Temple Trap Puzzle Solver with Heuristic Search" class="project-image-clean" loading="lazy">
+          </div>
+          <div class="project-details">
+            <div>
+              <a href="https://github.com" target="_blank" rel="noopener" class="project-title-link">
+                Temple Trap Puzzle Solver with Heuristic Search
+              </a>
+              <span class="project-subline"> — A* Search, Iterative Deepening & Interactive Pygame Visualizer</span>
+              <span class="item-muted" style="margin-left:8px; font-family:var(--font-mono); font-size:0.8rem;">[November 2025]</span>
+            </div>
+            <ul class="cv-bullets" style="margin-top: 6px;">
+              <li>Implemented and compared A* search and BFS graph traversal / Iterative Deepening algorithms to solve the sliding tile puzzle for different initial configurations.</li>
+              <li>Modeled a 3x3 grid state space with custom heuristics, achieving up to 52.68% reduction in nodes expanded compared to BFS.</li>
+              <li>Developed an interactive Pygame graphical visualizer rendering sequential optimal solution paths with step-by-step navigation.</li>
+            </ul>
+            <div class="project-tags-inline">
+              <span class="tag-clean">Python</span>
+              <span class="tag-clean">Artificial Intelligence</span>
+              <span class="tag-clean">A* Search</span>
+              <span class="tag-clean">Iterative Deepening</span>
+              <span class="tag-clean">Pygame</span>
+            </div>
+            <div class="project-action-links">
+              <button class="clean-link-btn btn-open-modal" data-id="temple-trap-solver">[Read System Architecture & Deep Dive]</button>
+              <a href="https://github.com" target="_blank" rel="noopener" class="clean-link-btn">[Source Code]</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 8 -->
+        <article class="project-entry">
+          <div>
+            <img src="assets/images/energy-iot.png" alt="Microsoft AI Unlocked Hackathon" class="project-image-clean" loading="lazy">
+          </div>
+          <div class="project-details">
+            <div>
+              <a href="https://github.com" target="_blank" rel="noopener" class="project-title-link">
+                Microsoft AI Unlocked Hackathon | India's Top 55
+              </a>
+              <span class="project-subline"> — Interactive Gen-AI Educational Whiteboard Platform</span>
+              <span class="item-muted" style="margin-left:8px; font-family:var(--font-mono); font-size:0.8rem;">[February 2026]</span>
+            </div>
+            <ul class="cv-bullets" style="margin-top: 6px;">
+              <li>Built a Gen-AI-powered interactive educational whiteboard platform enabling real-time problem solving and instant AI-driven feedback.</li>
+              <li>Integrated mistake detection, dynamic hint generation, and multimodal input support to create an enhanced learning experience.</li>
+              <li>Designed a PostgreSQL schema tracking student attempts, errors, progress, and granular mistake metadata across problem-solving sessions.</li>
+              <li>Delivered a fully functional MVP with a polished live demo, meeting all technical requirements and ranking among India's Top 55.</li>
+            </ul>
+            <div class="project-tags-inline">
+              <span class="tag-clean">Gen-AI</span>
+              <span class="tag-clean">React</span>
+              <span class="tag-clean">Express</span>
+              <span class="tag-clean">PostgreSQL</span>
+              <span class="tag-clean">Multimodal</span>
+              <span class="tag-clean">Full-Stack</span>
+            </div>
+            <div class="project-action-links">
+              <button class="clean-link-btn btn-open-modal" data-id="microsoft-ai-unlocked">[Read System Architecture & Deep Dive]</button>
+              <a href="https://github.com" target="_blank" rel="noopener" class="clean-link-btn">[Source Code]</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         COMPETITIONS & AWARDS
+         ====================================================================== -->
+    <section class="content-section" id="awards">
+      <h2 class="section-heading-blue">Awards & Competitive Programming Achievements</h2>
+      <ul class="academic-list" id="awards-list-container">
+        <li class="academic-list-item"><span>Achieved an All India Rank 821 in Joint Entrance Exam Advanced 2024 among 160,000 candidates (conducted by IIT Madras)</span></li>
+        <li class="academic-list-item"><span>Achieved an All India Rank 1424 in Joint Entrance Exam Main 2024 among over a million candidates</span></li>
+        <li class="academic-list-item"><span>Attained the title of Expert with a peak rating of 1600 on Codeforces (Handle: CapLevi04)</span></li>
+        <li class="academic-list-item"><span>Attained the title of 3 Star with a peak rating of 1752 on CodeChef (Handle: cap_levi04)</span></li>
+        <li class="academic-list-item"><span>Attained the title of 4 Kyu with a peak rating of 1292 on AtCoder (Handle: CapLevi04)</span></li>
+        <li class="academic-list-item"><span>Qualified for Integral Cup 2026 finals after clearing 3 competitive elimination rounds, ranking among top 40 out of 2000+ candidates</span></li>
+        <li class="academic-list-item"><span>Ranked 207th globally and 26th in India amongst 18,000+ teams in IMC Prosperity 4, IMC's flagship algorithmic trading competition</span></li>
+        <li class="academic-list-item"><span>Achieved Gold Level in WorldQuant Challenge, a global quantitative finance competition focused on predictive alpha signals</span></li>
+        <li class="academic-list-item"><span>Selected in India's Top 55 at the Microsoft AI Unlocked Hackathon (Feb'26)</span></li>
+      </ul>
+    </section>
+
+    <!-- ======================================================================
+         POSITIONS OF RESPONSIBILITY (CV Format)
+         ====================================================================== -->
+    <section class="content-section" id="experience">
+      <h2 class="section-heading-blue">Positions of Responsibility & Leadership</h2>
+      <div class="cv-timeline" id="experience-cv-container">
+        
+        <div class="cv-entry">
+          <div class="cv-header-row">
+            <span class="cv-role">Strategist</span>
+            <span class="cv-period">Oct'24 - Apr'26</span>
+          </div>
+          <div class="cv-org">The KGPian Game Theory Society — IIT Kharagpur</div>
+          <ul class="cv-bullets">
+            <li>Organized the introductory seminar of the society, introducing game-theoretic concepts and algorithmic problem solving to hundreds of attendees.</li>
+            <li>Designed competitive tasks, problem sets, and strategic challenges for the selection and onboarding of first-year students.</li>
+          </ul>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-header-row">
+            <span class="cv-role">Subhead</span>
+            <span class="cv-period">Apr'25 - Mar'26</span>
+          </div>
+          <div class="cv-org">Finance and Economics Club — IIT Kharagpur</div>
+          <ul class="cv-bullets">
+            <li>Contributed to the planning and successful execution of major society events, competitions, and quantitative finance workshops.</li>
+            <li>Coordinated project workflows and guided peer members in algorithmic and quantitative finance initiatives.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         TECHNICAL SKILLS MATRIX
+         ====================================================================== -->
+    <section class="content-section" id="skills">
+      <h2 class="section-heading-blue">Technical Skills & Expertise</h2>
+      <div class="skills-clean-grid" id="skills-clean-container">
+        
+        <div class="skills-clean-category">
+          <h4>Programming Languages</h4>
+          <ul class="skills-clean-list">
+            <li class="skills-clean-item"><span>C++ (STL, Templates, Systems)<span class="skill-highlight-dot">★</span></span></li>
+            <li class="skills-clean-item"><span>Python<span class="skill-highlight-dot">★</span></span></li>
+            <li class="skills-clean-item"><span>C (Pointers, Memory, POSIX)<span class="skill-highlight-dot">★</span></span></li>
+            <li class="skills-clean-item"><span>SQL (PostgreSQL, MySQL)<span class="skill-highlight-dot">★</span></span></li>
+            <li class="skills-clean-item"><span>Bash / Shell Scripting</span></li>
+            <li class="skills-clean-item"><span>JavaScript / HTML / CSS</span></li>
+            <li class="skills-clean-item"><span>Cypher (Graph DB)</span></li>
+          </ul>
+        </div>
+
+        <div class="skills-clean-category">
+          <h4>Libraries & ML Frameworks</h4>
+          <ul class="skills-clean-list">
+            <li class="skills-clean-item"><span>PyTorch<span class="skill-highlight-dot">★</span></span></li>
+            <li class="skills-clean-item"><span>C++ STL<span class="skill-highlight-dot">★</span></span></li>
+            <li class="skills-clean-item"><span>NumPy & Pandas<span class="skill-highlight-dot">★</span></span></li>
+            <li class="skills-clean-item"><span>Scikit-learn</span></li>
+            <li class="skills-clean-item"><span>OpenCV<span class="skill-highlight-dot">★</span></span></li>
+            <li class="skills-clean-item"><span>TensorFlow & Keras</span></li>
+            <li class="skills-clean-item"><span>Matplotlib & Seaborn</span></li>
+          </ul>
+        </div>
+
+        <div class="skills-clean-category">
+          <h4>Databases & Storage</h4>
+          <ul class="skills-clean-list">
+            <li class="skills-clean-item"><span>PostgreSQL<span class="skill-highlight-dot">★</span></span></li>
+            <li class="skills-clean-item"><span>Neo4j (Graph Database)<span class="skill-highlight-dot">★</span></span></li>
+            <li class="skills-clean-item"><span>MySQL</span></li>
+            <li class="skills-clean-item"><span>MongoDB</span></li>
+          </ul>
+        </div>
+
+        <div class="skills-clean-category">
+          <h4>Software & Developer Tools</h4>
+          <ul class="skills-clean-list">
+            <li class="skills-clean-item"><span>Git & GitHub<span class="skill-highlight-dot">★</span></span></li>
+            <li class="skills-clean-item"><span>Linux / POSIX Environments<span class="skill-highlight-dot">★</span></span></li>
+            <li class="skills-clean-item"><span>Google Colab & Jupyter Notebook</span></li>
+            <li class="skills-clean-item"><span>GDB & Valgrind (Debugging)</span></li>
+            <li class="skills-clean-item"><span>MS-Office Suite</span></li>
+          </ul>
+        </div>
+
+        <div class="skills-clean-category">
+          <h4>Core Technical Competencies</h4>
+          <ul class="skills-clean-list">
+            <li class="skills-clean-item"><span>Competitive Programming<span class="skill-highlight-dot">★</span></span></li>
+            <li class="skills-clean-item"><span>Data Structures & Algorithms<span class="skill-highlight-dot">★</span></span></li>
+            <li class="skills-clean-item"><span>System Programming & Query Engines<span class="skill-highlight-dot">★</span></span></li>
+            <li class="skills-clean-item"><span>Object-Oriented Programming (OOP)<span class="skill-highlight-dot">★</span></span></li>
+            <li class="skills-clean-item"><span>Heuristic Search & Game AI<span class="skill-highlight-dot">★</span></span></li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         CONTACT SECTION
+         ====================================================================== -->
+    <section class="content-section" id="contact">
+      <h2 class="section-heading-blue">Contact Information</h2>
+
+      <div class="contact-clean-layout">
+        <div>
+          <p style="font-size: 0.98rem; line-height: 1.7; color: var(--text-primary); margin-bottom: 16px;">
+            I am always open to discussing research collaborations, summer engineering internships, and systems / ML opportunities. Feel free to reach out directly via email or the form.
+          </p>
+          <p style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 8px;">
+            <strong>Email:</strong> priyanshu.paliwal [at] kgpian.iitkgp.ac.in
+          </p>
+          <p style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 16px;">
+            <strong>Institute:</strong> Indian Institute of Technology (IIT) Kharagpur, West Bengal, India
+          </p>
+          <button class="clean-link-btn" id="clean-copy-email">
+            [Click to copy email address]
+          </button>
+        </div>
+
+        <div>
+          <form class="contact-simple-form" id="contact-clean-form">
+            <input type="text" id="clean-form-name" class="clean-input" placeholder="Your Name" required>
+            <input type="email" id="clean-form-email" class="clean-input" placeholder="Your Email" required>
+            <textarea id="clean-form-message" class="clean-textarea" placeholder="Your Message / Opportunity details..." required></textarea>
+            <button type="submit" class="clean-submit-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SITE FOOTER
+         ====================================================================== -->
+    <footer class="site-footer">
+      <div>© <span id="current-year">2026</span> Priyanshu Paliwal • B.Tech.(Hons.) in Artificial Intelligence, IIT Kharagpur.</div>
+      <div><a href="#home" class="item-blue-link">Back to top ↑</a></div>
+    </footer>
+  </div>
+
+  <!-- Project Case Study Modal Overlay -->
+  <div class="modal-overlay" id="project-modal-overlay" role="dialog" aria-modal="true" aria-label="Project Case Study">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="project-modal-close" aria-label="Close modal">✕</button>
+      <div id="project-modal-content">
+        <!-- Rendered via main.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast-notification" class="toast-notification"></div>
+
+  <!-- Scripts with Cache Busting -->
+  <script src="js/data.js?v=5.0"></script>
+  <script>
+/**
+ * ===================================================================
+ * INTERACTIVE CLI TERMINAL EMULATOR
+ * ===================================================================
+ * Tailored for Priyanshu Paliwal | IIT Kharagpur (24AI10043)
+ */
+
+/**
+ * Standard 16-color Windows Console Color Palette mapped for Web UI
+ */
+const WIN_CONSOLE_COLORS = {
+  '0': { name: 'Black',        hex: '#0c0c0c', isDark: true },
+  '1': { name: 'Blue',         hex: '#0037da', isDark: true },
+  '2': { name: 'Green',        hex: '#13a10e', isDark: true },
+  '3': { name: 'Aqua',         hex: '#0891b2', isDark: true },
+  '4': { name: 'Red',          hex: '#b91c1c', isDark: true },
+  '5': { name: 'Purple',       hex: '#7e22ce', isDark: true },
+  '6': { name: 'Yellow',       hex: '#a16207', isDark: true },
+  '7': { name: 'White',        hex: '#e2e8f0', isDark: false },
+  '8': { name: 'Gray',         hex: '#52525b', isDark: true },
+  '9': { name: 'Light Blue',   hex: '#38bdf8', isDark: false },
+  'a': { name: 'Light Green',  hex: '#22c55e', isDark: false },
+  'b': { name: 'Light Aqua',   hex: '#2dd4bf', isDark: false },
+  'c': { name: 'Light Red',    hex: '#f87171', isDark: false },
+  'd': { name: 'Light Purple', hex: '#c084fc', isDark: false },
+  'e': { name: 'Light Yellow', hex: '#fde047', isDark: false },
+  'f': { name: 'Bright White', hex: '#ffffff', isDark: false }
+};
+
+function hexToRgb(hex) {
+  let c = hex.replace('#', '');
+  if (c.length === 3) c = c.split('').map(x => x + x).join('');
+  const num = parseInt(c, 16);
+  return [(num >> 16) & 255, (num >> 8) & 255, num & 255];
+}
+
+function rgbToHex(r, g, b) {
+  return '#' + [r, g, b].map(x => {
+    const hex = Math.max(0, Math.min(255, Math.round(x))).toString(16);
+    return hex.length === 1 ? '0' + hex : hex;
+  }).join('');
+}
+
+function blendHex(c1, c2, ratio) {
+  const [r1, g1, b1] = hexToRgb(c1);
+  const [r2, g2, b2] = hexToRgb(c2);
+  return rgbToHex(
+    r1 + (r2 - r1) * ratio,
+    g1 + (g2 - g1) * ratio,
+    b1 + (b2 - b1) * ratio
+  );
+}
+
+function getLuminance(hex) {
+  const [r, g, b] = hexToRgb(hex);
+  return (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+}
+
+class EngineeringTerminal {
+  constructor(containerId, inputId, data) {
+    this.container = document.getElementById(containerId);
+    this.input = document.getElementById(inputId);
+    this.data = data;
+    this.history = [];
+    this.historyIndex = -1;
+
+    this.init();
+  }
+
+  init() {
+    if (!this.container || !this.input) return;
+
+    // Restore persistent theme from localStorage if set
+    try {
+      const savedColor = localStorage.getItem("user-cmd-color");
+      if (savedColor) {
+        this.applyWindowsColor(savedColor, false);
+      }
+    } catch (e) {
+      // Storage unavailable or blocked
+    }
+
+    this.printWelcome();
+
+    this.input.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        const cmd = this.input.value.trim();
+        if (cmd) {
+          this.history.push(cmd);
+          this.historyIndex = this.history.length;
+          this.execute(cmd);
+          this.input.value = "";
+        }
+      } else if (e.key === "ArrowUp") {
+        e.preventDefault();
+        if (this.history.length > 0 && this.historyIndex > 0) {
+          this.historyIndex--;
+          this.input.value = this.history[this.historyIndex];
+        }
+      } else if (e.key === "ArrowDown") {
+        e.preventDefault();
+        if (this.historyIndex < this.history.length - 1) {
+          this.historyIndex++;
+          this.input.value = this.history[this.historyIndex];
+        } else {
+          this.historyIndex = this.history.length;
+          this.input.value = "";
+        }
+      }
+    });
+
+    // Keep focus when clicking inside terminal window
+    if (this.container.parentElement) {
+      this.container.parentElement.addEventListener("click", () => {
+        this.input.focus();
+      });
+    }
+  }
+
+  printWelcome() {
+    const welcomeHtml = `
+      <div class="term-line term-dim">Priyanshu Paliwal // IIT Kharagpur AI & Systems CLI Shell v2.6.0</div>
+      <div class="term-line term-dim">Type <span class="term-cyan">'help'</span> or try <span class="term-cyan">'color 0a'</span> to change the site color theme.</div>
+      <div class="term-line term-dim">--------------------------------------------------------------------------------</div>
+    `;
+    this.appendOutput(welcomeHtml);
+  }
+
+  appendOutput(html) {
+    const line = document.createElement("div");
+    line.className = "term-output-block";
+    line.innerHTML = html;
+    this.container.appendChild(line);
+    this.scrollToBottom();
+  }
+
+  scrollToBottom() {
+    this.container.scrollTop = this.container.scrollHeight;
+  }
+
+  execute(command) {
+    const parts = command.trim().split(/\s+/);
+    const cmd = parts[0].toLowerCase();
+    const args = parts.slice(1).join(" ");
+
+    // Echo the command
+    const echoHtml = `
+      <div class="term-line">
+        <span class="term-prompt-label">guest@kgpian:~$</span>
+        <span class="term-cmd-echo">${this.escapeHtml(command)}</span>
+      </div>
+    `;
+    this.appendOutput(echoHtml);
+
+    switch (cmd) {
+      case "help":
+        this.cmdHelp();
+        break;
+      case "whoami":
+      case "bio":
+        this.cmdWhoami();
+        break;
+      case "skills":
+        this.cmdSkills();
+        break;
+      case "projects":
+        this.cmdProjects();
+        break;
+      case "education":
+      case "coursework":
+        this.cmdEducation();
+        break;
+      case "experience":
+        this.cmdExperience();
+        break;
+      case "awards":
+      case "honors":
+      case "achievements":
+        this.cmdAwards();
+        break;
+      case "handles":
+      case "cp":
+        this.cmdHandles();
+        break;
+      case "contact":
+        this.cmdContact();
+        break;
+      case "clear":
+      case "cls":
+        this.container.innerHTML = "";
+        this.printWelcome();
+        break;
+      case "sudo":
+        this.appendOutput(`<div class="term-line term-yellow">⚠️ Permission denied: guest is not in sudoers file. This incident will be reported to Priyanshu! 😄</div>`);
+        break;
+      case "cat":
+        if (args.includes("resume") || args.includes("cv")) {
+          this.cmdResume();
+        } else {
+          this.appendOutput(`<div class="term-line term-red">cat: ${this.escapeHtml(args || "file")}: No such file or directory. Try 'cat resume'</div>`);
+        }
+        break;
+      case "matrix":
+        this.cmdMatrix();
+        break;
+      case "date":
+        this.appendOutput(`<div class="term-line term-cyan">${new Date().toLocaleString()}</div>`);
+        break;
+      case "color":
+      case "theme":
+        this.cmdColor(args);
+        break;
+      default:
+        this.appendOutput(`
+          <div class="term-line term-red">zsh: command not found: ${this.escapeHtml(cmd)}</div>
+          <div class="term-line term-dim">Type <span class="term-cyan">'help'</span> for a list of valid commands.</div>
+        `);
+    }
+  }
+
+  cmdHelp() {
+    const helpHtml = `
+      <div class="term-table">
+        <div class="term-table-row">
+          <div class="term-table-cell term-cyan">color [attr]</div>
+          <div class="term-table-cell term-dim">Change site color (e.g. 'color 0a', 'color 1f', 'color /?')</div>
+        </div>
+        <div class="term-table-row">
+          <div class="term-table-cell term-cyan">whoami</div>
+          <div class="term-table-cell term-dim">Print engineer bio, institute, and status</div>
+        </div>
+        <div class="term-table-row">
+          <div class="term-table-cell term-cyan">skills</div>
+          <div class="term-table-cell term-dim">List programming languages, ML stack, and databases</div>
+        </div>
+        <div class="term-table-row">
+          <div class="term-table-cell term-cyan">projects</div>
+          <div class="term-table-cell term-dim">Display systems and AI engineering projects</div>
+        </div>
+        <div class="term-table-row">
+          <div class="term-table-cell term-cyan">awards</div>
+          <div class="term-table-cell term-dim">Show JEE Advanced rank, CP ratings, and quant results</div>
+        </div>
+        <div class="term-table-row">
+          <div class="term-table-cell term-cyan">handles</div>
+          <div class="term-table-cell term-dim">View competitive programming profiles (Codeforces, CodeChef, AtCoder)</div>
+        </div>
+        <div class="term-table-row">
+          <div class="term-table-cell term-cyan">education</div>
+          <div class="term-table-cell term-dim">Show IIT Kharagpur degree, CGPA, and coursework</div>
+        </div>
+        <div class="term-table-row">
+          <div class="term-table-cell term-cyan">experience</div>
+          <div class="term-table-cell term-dim">Review leadership & positions of responsibility</div>
+        </div>
+        <div class="term-table-row">
+          <div class="term-table-cell term-cyan">cat resume</div>
+          <div class="term-table-cell term-dim">Print formatted plain-text CV summary</div>
+        </div>
+        <div class="term-table-row">
+          <div class="term-table-cell term-cyan">contact</div>
+          <div class="term-table-cell term-dim">Get email and profile links</div>
+        </div>
+        <div class="term-table-row">
+          <div class="term-table-cell term-cyan">clear</div>
+          <div class="term-table-cell term-dim">Clear the terminal window</div>
+        </div>
+      </div>
+    `;
+    this.appendOutput(helpHtml);
+  }
+
+  cmdWhoami() {
+    const p = this.data.personal;
+    const html = `
+      <div class="term-line term-green"><strong>${p.name}</strong> • Roll: ${p.rollNumber}</div>
+      <div class="term-line term-dim">${p.title}</div>
+      <div class="term-line term-yellow">Status: ${p.status}</div>
+      <div class="term-line term-dim">Location: ${p.location}</div>
+      <div class="term-line" style="margin-top:6px;">${p.tagline}</div>
+    `;
+    this.appendOutput(html);
+  }
+
+  cmdSkills() {
+    let html = `<div class="term-line term-cyan"><strong>TECHNICAL SKILLS & COMPETENCIES</strong></div>`;
+    this.data.skills.categories.forEach((cat) => {
+      const topSkills = cat.items.map(s => s.highlight ? `<span class="term-green">${s.name}*</span>` : s.name).join(", ");
+      html += `
+        <div class="term-line" style="margin-top:4px;">
+          <span class="term-yellow">[${cat.name}]</span>: ${topSkills}
+        </div>
+      `;
+    });
+    html += `<div class="term-line term-dim" style="margin-top:4px;">* Denotes primary proficiency</div>`;
+    this.appendOutput(html);
+  }
+
+  cmdProjects() {
+    let html = `<div class="term-line term-cyan"><strong>FEATURED PROJECTS</strong></div>`;
+    this.data.projects.forEach((proj, idx) => {
+      html += `
+        <div class="term-line" style="margin-top:6px;">
+          <span class="term-green">[${idx + 1}] ${proj.title}</span> <span class="term-dim">(${proj.period})</span>
+          <div class="term-dim" style="padding-left:14px;">${proj.summary}</div>
+          <div class="term-yellow" style="padding-left:14px;">Stack: ${proj.tags.join(" • ")}</div>
+        </div>
+      `;
+    });
+    this.appendOutput(html);
+  }
+
+  cmdAwards() {
+    let html = `<div class="term-line term-cyan"><strong>AWARDS & ACHIEVEMENTS</strong></div>`;
+    this.data.education.honors.forEach((h, idx) => {
+      html += `
+        <div class="term-line" style="margin-top:4px;">
+          <span class="term-yellow">•</span> <span>${h}</span>
+        </div>
+      `;
+    });
+    this.appendOutput(html);
+  }
+
+  cmdHandles() {
+    const p = this.data.personal;
+    const html = `
+      <div class="term-line term-cyan"><strong>COMPETITIVE PROGRAMMING HANDLES</strong></div>
+      <div class="term-line">• Codeforces: <span class="term-green">CapLevi04</span> (Expert, Peak: 1600) — <a href="${p.codeforces}" target="_blank" class="term-cyan">${p.codeforces}</a></div>
+      <div class="term-line">• CodeChef: <span class="term-green">cap_levi04</span> (3 Star, Peak: 1752) — <a href="${p.codechef}" target="_blank" class="term-cyan">${p.codechef}</a></div>
+      <div class="term-line">• AtCoder: <span class="term-green">CapLevi04</span> (4 Kyu, Peak: 1292) — <a href="${p.atcoder}" target="_blank" class="term-cyan">${p.atcoder}</a></div>
+    `;
+    this.appendOutput(html);
+  }
+
+  cmdEducation() {
+    const ed = this.data.education;
+    const courses = ed.coursework.map(c => `${c.name}`).slice(0, 6).join(", ");
+    let html = `
+      <div class="term-line term-green"><strong>${ed.degree}</strong></div>
+      <div class="term-line term-dim">${ed.university} | ${ed.duration}</div>
+      <div class="term-line term-yellow">Cumulative CGPA: ${ed.gpa}</div>
+      <div class="term-line term-dim" style="margin-top:4px;">Schooling:</div>
+    `;
+    ed.schooling.forEach(s => {
+      html += `<div class="term-line" style="padding-left:14px;">• ${s.level}: ${s.institute} — <span class="term-green">${s.score}</span> (${s.year})</div>`;
+    });
+    html += `<div class="term-line" style="margin-top:4px;">Sample Courses: <span class="term-dim">${courses}...</span></div>`;
+    this.appendOutput(html);
+  }
+
+  cmdExperience() {
+    let html = `<div class="term-line term-cyan"><strong>POSITIONS OF RESPONSIBILITY</strong></div>`;
+    this.data.experience.forEach((exp) => {
+      html += `
+        <div class="term-line" style="margin-top:6px;">
+          <span class="term-green">${exp.role}</span> @ <span class="term-yellow">${exp.organization}</span>
+          <span class="term-dim">(${exp.period})</span>
+          <div class="term-dim" style="padding-left:14px;">${exp.description}</div>
+        </div>
+      `;
+    });
+    this.appendOutput(html);
+  }
+
+  cmdContact() {
+    const p = this.data.personal;
+    const html = `
+      <div class="term-line term-cyan"><strong>CONTACT & PROFILES</strong></div>
+      <div class="term-line">Email: <span class="term-green">${p.email}</span></div>
+      <div class="term-line">Codeforces: <a href="${p.codeforces}" target="_blank" class="term-cyan">${p.codeforces}</a></div>
+      <div class="term-line">CodeChef: <a href="${p.codechef}" target="_blank" class="term-cyan">${p.codechef}</a></div>
+      <div class="term-line">AtCoder: <a href="${p.atcoder}" target="_blank" class="term-cyan">${p.atcoder}</a></div>
+      <div class="term-line">GitHub: <a href="${p.github}" target="_blank" class="term-cyan">${p.github}</a></div>
+      <div class="term-line">LinkedIn: <a href="${p.linkedin}" target="_blank" class="term-cyan">${p.linkedin}</a></div>
+    `;
+    this.appendOutput(html);
+  }
+
+  cmdResume() {
+    const p = this.data.personal;
+    const ed = this.data.education;
+    const html = `
+      <div class="term-line term-yellow">===================================================</div>
+      <div class="term-line term-green"><strong>${p.name}</strong> | Roll: ${p.rollNumber}</div>
+      <div class="term-line term-dim">${p.title} | ${p.email}</div>
+      <div class="term-line term-yellow">===================================================</div>
+      <div class="term-line term-cyan">EDUCATION:</div>
+      <div class="term-line">${ed.degree} — CGPA: ${ed.gpa}</div>
+      <div class="term-line term-dim">${ed.university} (${ed.duration})</div>
+      <div class="term-line term-cyan" style="margin-top:6px;">TOP HONORS:</div>
+      <div class="term-line">• JEE Advanced 2024: AIR 821 (among 160,000 candidates)</div>
+      <div class="term-line">• Codeforces: Expert (1600) | CodeChef: 3 Star (1752) | AtCoder: 4 Kyu (1292)</div>
+      <div class="term-line">• IMC Prosperity 4: Rank 207 globally & 26th in India (18,000+ teams)</div>
+      <div class="term-line term-yellow" style="margin-top:6px;">===================================================</div>
+    `;
+    this.appendOutput(html);
+  }
+
+  cmdMatrix() {
+    const quotes = [
+      "Wake up, Neo... The Matrix has you.",
+      "There is no spoon.",
+      "C++ query optimization: Bitmask DP initialized.",
+      "Myers edit graph calculated: Minimum edit script found."
+    ];
+    const rand = quotes[Math.floor(Math.random() * quotes.length)];
+    const rain = "01010000 01010010 01001001 01011001 01000001 01001110 01010011 01001000 01010101";
+    this.appendOutput(`
+      <div class="term-line term-green" style="font-size:0.8rem; letter-spacing:2px;">${rain}</div>
+      <div class="term-line term-green"><em>"${rand}"</em></div>
+    `);
+  }
+
+  applyWindowsColor(attr, save = true) {
+    const clean = (attr || "").trim().toLowerCase();
+
+    // Reset condition
+    if (!clean || clean === "reset" || clean === "default") {
+      const root = document.documentElement;
+      const cssProps = [
+        "--bg-primary",
+        "--bg-subtle",
+        "--bg-highlight",
+        "--color-primary-blue",
+        "--color-blue-hover",
+        "--color-orange-active",
+        "--text-primary",
+        "--text-secondary",
+        "--text-muted",
+        "--border-light",
+        "--border-divider",
+        "--terminal-bg",
+        "--terminal-header-bg",
+        "--terminal-text",
+        "--term-prompt",
+        "--btn-text-color"
+      ];
+      cssProps.forEach((prop) => root.style.removeProperty(prop));
+      if (save) {
+        try {
+          localStorage.removeItem("user-cmd-color");
+        } catch (e) {}
+      }
+      return { success: true, isReset: true };
+    }
+
+    // Windows CMD allows 1 hex digit (defaults background to 0)
+    let parsedAttr = clean;
+    if (parsedAttr.length === 1) {
+      parsedAttr = "0" + parsedAttr;
+    }
+
+    if (parsedAttr.length !== 2) {
+      return {
+        success: false,
+        msg: "Invalid color attribute. Type 'color /?' for help."
+      };
+    }
+
+    const bgKey = parsedAttr[0];
+    const fgKey = parsedAttr[1];
+
+    if (!WIN_CONSOLE_COLORS[bgKey] || !WIN_CONSOLE_COLORS[fgKey]) {
+      return {
+        success: false,
+        msg: "Invalid color attribute. Each digit must be 0-9 or A-F. Type 'color /?' for help."
+      };
+    }
+
+    // Windows CMD error if identical colors
+    if (bgKey === fgKey) {
+      return {
+        success: false,
+        msg: "Background and foreground colors cannot be identical."
+      };
+    }
+
+    const bg = WIN_CONSOLE_COLORS[bgKey];
+    const fg = WIN_CONSOLE_COLORS[fgKey];
+    const root = document.documentElement;
+
+    const fgLum = getLuminance(fg.hex);
+
+    let bgSubtle, bgHighlight, borderLight, borderDivider;
+    let textSec, textMuted, termBg, termHeaderBg;
+
+    if (bg.isDark) {
+      bgSubtle = blendHex(bg.hex, "#ffffff", 0.08);
+      bgHighlight = blendHex(bg.hex, fg.hex, 0.22);
+      borderLight = blendHex(bg.hex, fg.hex, 0.32);
+      borderDivider = blendHex(bg.hex, fg.hex, 0.18);
+      textSec = blendHex(fg.hex, bg.hex, 0.28);
+      textMuted = blendHex(fg.hex, bg.hex, 0.52);
+      termBg = blendHex(bg.hex, "#000000", 0.25);
+      termHeaderBg = blendHex(bg.hex, "#ffffff", 0.08);
+    } else {
+      bgSubtle = blendHex(bg.hex, "#000000", 0.05);
+      bgHighlight = blendHex(bg.hex, fg.hex, 0.18);
+      borderLight = blendHex(bg.hex, fg.hex, 0.26);
+      borderDivider = blendHex(bg.hex, fg.hex, 0.14);
+      textSec = blendHex(fg.hex, bg.hex, 0.32);
+      textMuted = blendHex(fg.hex, bg.hex, 0.55);
+      termBg = blendHex(bg.hex, "#ffffff", 0.35);
+      termHeaderBg = blendHex(bg.hex, "#000000", 0.06);
+    }
+
+    const btnTextColor = fgLum > 0.55 ? "#0c0c0c" : "#ffffff";
+    const hoverColor = bg.isDark ? blendHex(fg.hex, "#ffffff", 0.22) : blendHex(fg.hex, "#000000", 0.22);
+
+    root.style.setProperty("--bg-primary", bg.hex);
+    root.style.setProperty("--bg-subtle", bgSubtle);
+    root.style.setProperty("--bg-highlight", bgHighlight);
+    root.style.setProperty("--color-primary-blue", fg.hex);
+    root.style.setProperty("--color-blue-hover", hoverColor);
+    root.style.setProperty("--text-primary", fg.hex);
+    root.style.setProperty("--text-secondary", textSec);
+    root.style.setProperty("--text-muted", textMuted);
+    root.style.setProperty("--border-light", borderLight);
+    root.style.setProperty("--border-divider", borderDivider);
+    root.style.setProperty("--terminal-bg", termBg);
+    root.style.setProperty("--terminal-header-bg", termHeaderBg);
+    root.style.setProperty("--terminal-text", fg.hex);
+    root.style.setProperty("--term-prompt", fg.hex);
+    root.style.setProperty("--btn-text-color", btnTextColor);
+
+    if (save) {
+      try {
+        localStorage.setItem("user-cmd-color", parsedAttr);
+      } catch (e) {}
+    }
+
+    return {
+      success: true,
+      attr: parsedAttr,
+      bgName: bg.name,
+      fgName: fg.name,
+      bgHex: bg.hex,
+      fgHex: fg.hex
+    };
+  }
+
+  cmdColor(args) {
+    const raw = (args || "").trim();
+    const lower = raw.toLowerCase();
+
+    if (lower === "/?" || lower === "help" || lower === "-h" || lower === "--help") {
+      this.cmdColorHelp();
+      return;
+    }
+
+    if (!raw || lower === "reset" || lower === "default") {
+      this.applyWindowsColor("reset");
+      this.appendOutput(`
+        <div class="term-line term-green">Restored default academic color scheme (white & blue).</div>
+      `);
+      return;
+    }
+
+    const res = this.applyWindowsColor(raw);
+    if (!res.success) {
+      this.appendOutput(`
+        <div class="term-line term-red">${this.escapeHtml(res.msg)}</div>
+      `);
+      return;
+    }
+
+    const bDigit = res.attr[0].toUpperCase();
+    const fDigit = res.attr[1].toUpperCase();
+    this.appendOutput(`
+      <div class="term-line term-green">Website color scheme updated to <strong>[${bDigit}${fDigit}]</strong>:</div>
+      <div class="term-line" style="padding-left:14px;">
+        Background: <span style="display:inline-block; width:12px; height:12px; vertical-align:middle; background:${res.bgHex}; border:1px solid #777; border-radius:2px; margin-right:4px;"></span>[${bDigit}] ${res.bgName} (${res.bgHex})<br>
+        Foreground: <span style="display:inline-block; width:12px; height:12px; vertical-align:middle; background:${res.fgHex}; border:1px solid #777; border-radius:2px; margin-right:4px;"></span>[${fDigit}] ${res.fgName} (${res.fgHex})
+      </div>
+      <div class="term-line term-dim" style="margin-top:4px;">Tip: Type <span class="term-cyan">'color reset'</span> to return to the original theme, or <span class="term-cyan">'color /?'</span> for the color table.</div>
+    `);
+  }
+
+  cmdColorHelp() {
+    const helpHtml = `
+      <div class="term-line term-cyan"><strong>Sets default website foreground and background colors (Windows CMD syntax).</strong></div>
+      <div class="term-line term-yellow" style="margin-top:4px;">COLOR [attr]</div>
+      <div class="term-line term-dim" style="margin:4px 0 8px;">
+        attr specifies color attribute of console & website output.<br>
+        Specified by TWO hex digits: 1st digit = Background, 2nd digit = Foreground.
+      </div>
+      <div class="term-table">
+        <div class="term-table-row">
+          <div class="term-table-cell term-dim">0 = Black</div>
+          <div class="term-table-cell term-dim">8 = Gray</div>
+        </div>
+        <div class="term-table-row">
+          <div class="term-table-cell term-dim">1 = Blue</div>
+          <div class="term-table-cell term-dim">9 = Light Blue</div>
+        </div>
+        <div class="term-table-row">
+          <div class="term-table-cell term-dim">2 = Green</div>
+          <div class="term-table-cell term-dim">A = Light Green</div>
+        </div>
+        <div class="term-table-row">
+          <div class="term-table-cell term-dim">3 = Aqua</div>
+          <div class="term-table-cell term-dim">B = Light Aqua</div>
+        </div>
+        <div class="term-table-row">
+          <div class="term-table-cell term-dim">4 = Red</div>
+          <div class="term-table-cell term-dim">C = Light Red</div>
+        </div>
+        <div class="term-table-row">
+          <div class="term-table-cell term-dim">5 = Purple</div>
+          <div class="term-table-cell term-dim">D = Light Purple</div>
+        </div>
+        <div class="term-table-row">
+          <div class="term-table-cell term-dim">6 = Yellow</div>
+          <div class="term-table-cell term-dim">E = Light Yellow</div>
+        </div>
+        <div class="term-table-row">
+          <div class="term-table-cell term-dim">7 = White</div>
+          <div class="term-table-cell term-dim">F = Bright White</div>
+        </div>
+      </div>
+      <div class="term-line term-dim" style="margin-top:6px;">
+        <strong>Examples:</strong><br>
+        • <span class="term-green">color 0a</span> &nbsp;&rarr; Classic Hacker Light Green on Black<br>
+        • <span class="term-green">color 0b</span> &nbsp;&rarr; Cyberpunk Light Aqua on Black<br>
+        • <span class="term-green">color 1f</span> &nbsp;&rarr; PowerShell Bright White on Blue<br>
+        • <span class="term-green">color f0</span> &nbsp;&rarr; Clean Black on Bright White<br>
+        • <span class="term-green">color reset</span> &rarr; Restore default academic theme
+      </div>
+    `;
+    this.appendOutput(helpHtml);
+  }
+
+  escapeHtml(str) {
+    return str
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  }
+}
+
+if (typeof window !== "undefined") {
+  window.EngineeringTerminal = EngineeringTerminal;
+}
+
+  </script>
+  <script src="js/main.js?v=5.0"></script>
+  <script>
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
