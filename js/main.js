@@ -388,23 +388,42 @@ function setupProjectModal(projects) {
  */
 function setupScrollspy() {
   const navLinks = document.querySelectorAll(".header-nav .nav-link");
-  const sectionIds = ["contact", "terminal", "skills", "experience", "awards", "projects", "education", "home"];
+  const sectionIds = ["home", "education", "projects", "awards", "experience", "skills", "contact"];
 
   function onScroll() {
-    const scrollPos = window.scrollY + 130;
-    let activeId = "home";
+    // 1. If reached bottom of document, activate last section ('contact')
+    const scrollBottom = window.innerHeight + window.scrollY;
+    const docHeight = document.documentElement.scrollHeight;
+    if (scrollBottom >= docHeight - 50) {
+      setActive("contact");
+      return;
+    }
 
+    // 2. If at top of page, activate 'home'
+    if (window.scrollY < 180) {
+      setActive("home");
+      return;
+    }
+
+    // 3. Find the section whose top is closest to or just passed the header threshold (130px)
+    let currentId = "home";
     for (const id of sectionIds) {
       const el = document.getElementById(id);
-      if (el && scrollPos >= el.offsetTop) {
-        activeId = id;
-        break;
+      if (el) {
+        const rect = el.getBoundingClientRect();
+        if (rect.top <= 130) {
+          currentId = id;
+        }
       }
     }
 
+    setActive(currentId);
+  }
+
+  function setActive(id) {
     navLinks.forEach((link) => {
       const href = link.getAttribute("href");
-      if (href === `#${activeId}`) {
+      if (href === `#${id}`) {
         link.classList.add("active");
       } else {
         link.classList.remove("active");
@@ -413,5 +432,6 @@ function setupScrollspy() {
   }
 
   window.addEventListener("scroll", onScroll, { passive: true });
+  window.addEventListener("resize", onScroll, { passive: true });
   onScroll();
 }

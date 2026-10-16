@@ -21,15 +21,83 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Stylesheets with Cache Busting -->
-  <link rel="stylesheet" href="css/styles.css?v=5.0">
-  <link rel="stylesheet" href="css/terminal.css?v=5.0">
+  <link rel="stylesheet" href="css/styles.css?v=20261016_fixed_v6">
+  <link rel="stylesheet" href="css/terminal.css?v=20261016_fixed_v6">
+
+  <!-- Critical Floating Header CSS: Guaranteed immediate render on all browsers & CDNs -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 85px;
+    }
+    body {
+      padding-top: 75px !important;
+    }
+    .site-header-sticky,
+    .site-header-fixed {
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      width: 100% !important;
+      z-index: 9999 !important;
+      background-color: var(--bg-primary);
+      border-bottom: 1px solid var(--border-light);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+    .header-inner {
+      display: flex !important;
+      justify-content: space-between !important;
+      align-items: center !important;
+      max-width: var(--container-max, 1080px);
+      margin: 0 auto;
+      padding: 12px 20px;
+      gap: 16px;
+    }
+    .header-brand-link {
+      text-decoration: none !important;
+      color: var(--color-primary-blue) !important;
+      display: inline-flex;
+      align-items: center;
+    }
+    .person-name {
+      font-size: clamp(1.25rem, 2.2vw, 1.7rem) !important;
+      font-weight: 800 !important;
+      color: var(--color-primary-blue) !important;
+      margin: 0 !important;
+      line-height: 1.15;
+      text-decoration: none !important;
+    }
+    .header-nav {
+      display: flex !important;
+      align-items: center !important;
+      gap: 18px !important;
+      flex-wrap: wrap !important;
+    }
+    .nav-link {
+      color: var(--color-primary-blue) !important;
+      text-decoration: none !important;
+      font-size: 0.92rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .nav-link:hover {
+      text-decoration: underline !important;
+    }
+    .nav-link.active {
+      color: var(--color-orange-active) !important;
+      font-weight: 700 !important;
+    }
+  </style>
 </head>
 <body>
 
   <!-- ======================================================================
        FLOATING STICKY HEADER & NAVIGATION (Always floats on top)
        ====================================================================== -->
-  <header class="site-header-sticky" id="home">
+  <header class="site-header-sticky">
     <div class="header-inner">
       <a href="#home" class="header-brand-link">
         <h1 class="person-name" id="person-name">Priyanshu Paliwal</h1>
@@ -42,13 +110,12 @@
         <a href="#awards" class="nav-link">Awards & CP</a>
         <a href="#experience" class="nav-link">Positions</a>
         <a href="#skills" class="nav-link">Skills</a>
-        <a href="#terminal" class="nav-link">Terminal</a>
         <a href="#contact" class="nav-link">Contact</a>
       </nav>
     </div>
   </header>
 
-  <div class="container">
+  <div class="container" id="home">
     <!-- Header Sublinks Row (Contact & CP Profiles) -->
     <div class="header-sublinks">
       <a href="mailto:priyanshu.paliwal@kgpian.iitkgp.ac.in" id="header-email-link">
@@ -1293,7 +1360,7 @@ if (typeof window !== "undefined") {
 }
 
   </script>
-  <script src="js/main.js?v=5.0"></script>
+  <script src="js/main.js?v=20261016_scrollspy_v7"></script>
   <script>
     document.getElementById("current-year").textContent = new Date().getFullYear();
   </script>
