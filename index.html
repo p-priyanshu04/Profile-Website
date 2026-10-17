@@ -792,11 +792,17 @@
         </div>
 
         <div>
-          <form class="contact-simple-form" id="contact-clean-form">
-            <input type="text" id="clean-form-name" class="clean-input" placeholder="Your Name" required>
-            <input type="email" id="clean-form-email" class="clean-input" placeholder="Your Email" required>
-            <textarea id="clean-form-message" class="clean-textarea" placeholder="Your Message / Opportunity details..." required></textarea>
-            <button type="submit" class="clean-submit-btn">Send Message</button>
+          <form class="contact-simple-form" id="contact-clean-form" action="https://formsubmit.co/ppbharm2005@gmail.com" method="POST">
+            <!-- FormSubmit Configuration -->
+            <input type="hidden" name="_subject" value="New Message from Priyanshu Paliwal's Portfolio">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="_honey" style="display:none">
+
+            <input type="text" id="clean-form-name" name="name" class="clean-input" placeholder="Your Name" required>
+            <input type="email" id="clean-form-email" name="email" class="clean-input" placeholder="Your Email" required>
+            <textarea id="clean-form-message" name="message" class="clean-textarea" placeholder="Your Message / Opportunity details..." required></textarea>
+            <button type="submit" class="clean-submit-btn" id="clean-submit-btn">Send Message</button>
           </form>
         </div>
       </div>

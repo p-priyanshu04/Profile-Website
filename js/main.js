@@ -283,15 +283,70 @@ function renderSkills(skillsData) {
    -------------------------------------------------------------------------- */
 function setupContact(personal) {
   const form = document.getElementById("contact-clean-form");
+  const submitBtn = document.getElementById("clean-submit-btn");
+
   if (form) {
-    form.addEventListener("submit", (e) => {
+    form.addEventListener("submit", async (e) => {
       e.preventDefault();
       const name = document.getElementById("clean-form-name").value.trim();
       const email = document.getElementById("clean-form-email").value.trim();
-      if (!name || !email) return;
+      const message = document.getElementById("clean-form-message").value.trim();
+      if (!name || !email || !message) return;
 
-      showToast(`Thank you, ${name}. Message received.`);
-      form.reset();
+      const originalBtnText = submitBtn ? submitBtn.textContent : "Send Message";
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Sending...";
+      }
+
+      try {
+        const response = await fetch("https://formsubmit.co/ajax/ppbharm2005@gmail.com", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+          },
+          body: JSON.stringify({
+            name: name,
+            email: email,
+            message: message,
+            _subject: `New Portfolio Message from ${name}`,
+            _template: "table",
+            _captcha: "false"
+          })
+        });
+
+        const data = await response.json();
+
+        if (response.ok && (data.success === "true" || data.success === true)) {
+          showToast(`Thank you, ${name}! Your message has been sent to Priyanshu.`);
+          form.reset();
+          if (submitBtn) {
+            submitBtn.textContent = "Message Sent! ✓";
+            setTimeout(() => {
+              submitBtn.textContent = originalBtnText;
+              submitBtn.disabled = false;
+            }, 3000);
+          }
+        } else if (data.message && data.message.includes("Activation")) {
+          showToast("Form needs one-time activation. Check ppbharm2005@gmail.com!");
+          form.reset();
+          if (submitBtn) {
+            submitBtn.textContent = originalBtnText;
+            submitBtn.disabled = false;
+          }
+        } else {
+          showToast(data.message || "Message sent!");
+          form.reset();
+          if (submitBtn) {
+            submitBtn.textContent = originalBtnText;
+            submitBtn.disabled = false;
+          }
+        }
+      } catch (err) {
+        console.warn("Form AJAX failed, attempting native submission fallback:", err);
+        form.submit();
+      }
     });
   }
 
